@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "pronto-para-crescer",
+    "title": "Como saber se sua empresa está pronta para crescer",
+    "excerpt": "Crescer exige mais do que ambição. Saiba avaliar se o seu negócio está realmente pronto para a próxima fase.",
+    "category": "Gestão",
+    "date": "2026-04-18",
+    "dateLabel": "18 Abr 2026",
+    "cover": "blog/capas/pronto-para-crescer.jpg",
+    "readTime": 7
+  },
+  {
+    "slug": "vender-mais",
+    "title": "Vender mais não é a solução para o lucro da sua empresa",
+    "excerpt": "Quantas vezes você ouviu que vender mais resolve tudo? A resposta pode te surpreender.",
+    "category": "Vendas & Gestão",
+    "date": "2026-04-13",
+    "dateLabel": "13 Abr 2026",
+    "cover": "blog/capas/Vender mais não é a solução.png",
+    "readTime": 6
+  },
+  {
+    "slug": "primeiro-trimestre",
+    "title": "O primeiro trimestre se foi: como estão os resultados?",
+    "excerpt": "Abril chegou. Para muitos empresários, é hora de parar e avaliar o que foi feito.",
+    "category": "Gestão",
+    "date": "2026-04-06",
+    "dateLabel": "06 Abr 2026",
+    "cover": "blog/capas/O primeiro trimestre se foi.png",
+    "readTime": 5
+  }
+]
