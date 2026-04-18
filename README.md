@@ -1,78 +1,90 @@
-# 🌐 Sonata.cx — Institutional Website
+# sonatacx-website — Institutional Website
+
+**Live:** [sonatacx.com.br](https://sonatacx.com.br)
+
+Institutional website for Sonata.cx, a business management and customer experience consultancy. Built as a static site with deliberate choices around performance, SEO architecture, and conversion — no build step, no dependencies, no framework overhead.
 
 ---
 
-## 🔗 Live Site
+## Architecture & Design Decisions
 
-**https://sonatacx.com.br**
+### Static-first, by choice
 
-The website serves as the primary digital presence for Sonata.cx, a CX and business management consultancy. It is hosted on Hostinger (shared hosting) and built entirely with static HTML, Tailwind CSS (CDN), and vanilla JavaScript — no build step required.
+The site runs on plain HTML, Tailwind CSS (CDN), and vanilla JavaScript hosted on Hostinger shared hosting. This wasn't a constraint — it was a decision. Static files load faster, require no server-side rendering, and are trivially cacheable. For a consultancy site whose primary KPI is lead generation, this is the right stack.
+
+### SEO-first structure
+
+Every page was built with organic search in mind from the start:
+
+- **One H1 per page**, always keyword-aligned to commercial intent
+- **Unique `<title>` and `<meta description>`** per page, targeting specific search queries (e.g. *"consultoria empresarial para crescimento sustentável"*, *"como avaliar os resultados da empresa no primeiro trimestre"*)
+- **`<link rel="canonical">`** on all pages to prevent duplicate content issues
+- **Open Graph and Twitter Card meta tags** on every page for consistent social sharing previews
+- **Structured data (JSON-LD)** implemented at three levels:
+  - `Organization` on the homepage
+  - `Article` + `BreadcrumbList` on every blog post
+  - `FAQPage` on article pages with Q&A sections to target featured snippets
+- **`sitemap.xml`** listing all URLs with `lastmod` and `changefreq`
+- **`robots.txt`** with sitemap reference
+
+### Blog as an SEO asset
+
+The blog (`/blog/`) was conceived as a topical authority cluster around the consultancy's core keywords: *gestão empresarial*, *planejamento estratégico*, *customer experience*, *redução de custos*, *melhoria de processos*. Each article:
+
+- Targets a specific search intent (informational + commercial)
+- Has an FAQ section designed to capture featured snippet positions
+- Contains contextual internal links back to the services section and contact page
+- Includes breadcrumb navigation (both visual and JSON-LD) to signal content hierarchy to crawlers
+- Shows category, publish date, author and estimated reading time
+
+Articles are written and structured in `.docx` files and converted to HTML via a Python build script that parses paragraph styles, applies Tailwind classes and generates complete, schema-complete pages — no manual HTML authoring required per article.
+
+### Conversion tracking
+
+- Google Analytics 4 (`G-C0J8CEBHSX`) with custom events
+- WhatsApp click tracking at all three touchpoints: inline contact link, floating button, and form-to-WhatsApp submission — each with distinct `event_label` for funnel analysis
+- Google Ads conversion pixel (`AW-905546952`) fires exclusively after successful lead form submission, not on page load
+- Lead capture on the Capacity Planner landing page (`planner.html`) posts to Google Sheets via Sheet.best with no backend required
+
+### Lead gate for tools
+
+The `/planner.html` page acts as a conversion gate for the Sonata CX Capacity Planner (hosted separately on Vercel). Visitors submit name, email, position and company before being redirected — data lands in Google Sheets, GA4 fires a `generate_lead` event, and the Google Ads conversion pixel fires. The tool itself is fully client-side (no data leaves the browser), which is the privacy-by-design pitch on the landing page.
 
 ---
 
-## 🏢 Project Context & Strategic Value
+## Pages
 
-Sonata.cx is a consultancy focused on Customer Experience (CX), business management, and operational efficiency. The website was designed to:
-
-- Present the consultancy's services and portfolio to potential clients
-- Showcase the founder's professional trajectory and client results
-- Serve as a lead capture gateway for proprietary CX tools developed under the **Sonata.cx Lab** initiative
-- Publish editorial content (blog/column) to establish authority in the CX and management space
-
----
-
-## 📄 Pages & Structure
-
-### `index.html` — Main Institutional Page
-
-The single-page website is structured into the following sections:
-
-- **Hero:** Value proposition and primary CTAs
-- **Sobre:** Founder profile and professional background
-- **Resultados:** Key client outcomes and notable partnerships (Nubank, Mercado Livre, iFood, Fluke)
-- **Serviços:** Service portfolio — Business Management, People Management, Market Strategy, and Special Services (AI training, mentoring)
-- **Ferramentas:** Gateway to free CX tools developed under Sonata.cx Lab, with lead capture before access
-- **Blog:** Editorial content published in a regional business newspaper (Montes Claros - MG)
-- **Contato/Footer:** Contact form, WhatsApp button, and social links
-
-### `planner.html` — Capacity Planner Landing & Lead Gate
-
-A dedicated landing page for the **Sonata CX Capacity Planner** tool. It explains the tool's value proposition and requires the visitor to register (name, email, phone, company) before being redirected to the live application.
-
-- Lead data is captured via **Sheet.best** and stored directly in Google Sheets
-- Google Analytics (`G-C0J8CEBHSX`) tracks page views and lead conversion events
-- Google Ads conversion (`AW-905546952`) fires only after successful form submission
+| Page | Purpose |
+|---|---|
+| `index.html` | Main institutional page — hero, about, results, services, tools, blog, contact |
+| `planner.html` | Lead gate for the Sonata CX Capacity Planner tool |
+| `blog/index.html` | Blog listing with category filters, reading time, author |
+| `blog/primeiro-trimestre.html` | Article: *Como avaliar os resultados da sua empresa no primeiro trimestre* |
+| `blog/vender-mais.html` | Article: *Vender mais não basta: como aumentar o lucro da empresa com mais eficiência* |
+| `sitemap.xml` | XML sitemap for all public URLs |
+| `robots.txt` | Crawl directives with sitemap reference |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
 | Markup | HTML5 |
-| Styling | Tailwind CSS (CDN) |
-| Fonts | Google Fonts (Bebas Neue, Raleway) |
-| Analytics | Google Analytics 4 (GA4) |
+| Styling | Tailwind CSS (CDN, JIT) |
+| Fonts | Google Fonts — Anta (titles), Raleway (body) |
+| Analytics | Google Analytics 4 |
+| Ads | Google Ads conversion tracking |
 | Lead Capture | Sheet.best → Google Sheets |
-| Hosting | Hostinger (shared hosting) |
+| Structured Data | JSON-LD (Organization, Article, BreadcrumbList, FAQPage) |
+| Hosting | Hostinger shared hosting |
+| Build tooling | Python scripts for article generation and batch updates |
 
 ---
 
-## 🚀 AI-Assisted Development & Methodology
-
-This website was built using an **AI-Augmented** product methodology. Acting as Product Lead and Content Architect, I used generative AI to:
-
-- Translate brand identity and service portfolio into a structured, conversion-focused layout
-- Implement the lead capture flow integrated with Google Sheets via Sheet.best, without requiring a backend
-- Configure Google Analytics and Google Ads conversion tracking with correct event firing (conversion pixel moved from page load to post-submission)
-- Develop the **Ferramentas** section as a scalable gateway for future CX tools
-
----
-
-## 💼 Developer / Portfolio
+## Developer / Portfolio
 
 **Project by: Eduardo Duarte e Araujo**
+Role: CX Strategy, Product & AI-Augmented Development
 
-Role: CX Strategy & AI-Augmented Product Development
-
-> **Disclaimer:** This repository contains the source code of the institutional website for Sonata.cx. It is published here for portfolio and code review purposes. The live version is hosted on Hostinger and may differ from the files in this repository.
+> This repository contains the source code of the institutional website for Sonata.cx, published here for portfolio and code review purposes. The live version is hosted on Hostinger and may differ from the files in this repository.
