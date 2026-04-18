@@ -10,6 +10,16 @@
     "readTime": 7
   },
   {
+    "slug": "gestores-cx-analise-dados-remoto",
+    "title": "Por que bons gestores de CX param de crescer e como a análise de dados quebra esse teto",
+    "excerpt": "Entenda por que bons gestores de CX travam na carreira e como a análise de dados ajuda a sair do operacional e crescer com mais consistência.",
+    "category": "Customer Experience",
+    "date": "2026-04-14",
+    "dateLabel": "14 Abr 2026",
+    "cover": "blog/capas/gestores-cx-analise-dados.jpg",
+    "readTime": 6
+  },
+  {
     "slug": "vender-mais",
     "title": "Vender mais não é a solução para o lucro da sua empresa",
     "excerpt": "Quantas vezes você ouviu que vender mais resolve tudo? A resposta pode te surpreender.",
@@ -20,6 +30,26 @@
     "readTime": 6
   },
   {
+    "slug": "analise-dados-cx-remoto",
+    "title": "Como a análise de dados ajuda CX a trabalhar de forma mais eficiente",
+    "excerpt": "Um passo a passo para resolução de problemas e tomada de decisão com análise de dados em operações de Customer Experience.",
+    "category": "Customer Experience",
+    "date": "2026-04-10",
+    "dateLabel": "10 Abr 2026",
+    "cover": "blog/capas/analise-dados-cx.jpg",
+    "readTime": 6
+  },
+  {
+    "slug": "backlog-critico-automacao-remoto",
+    "title": "Do backlog crítico à automação: como o problem solving e o vibe coding resolvem crises operacionais",
+    "excerpt": "Como combinar problem solving, automação e vibe coding para reduzir backlog e responder crises operacionais com mais velocidade.",
+    "category": "Customer Experience",
+    "date": "2026-04-07",
+    "dateLabel": "07 Abr 2026",
+    "cover": "blog/capas/backlog-critico-automacao.jpg",
+    "readTime": 5
+  },
+  {
     "slug": "primeiro-trimestre",
     "title": "O primeiro trimestre se foi: como estão os resultados?",
     "excerpt": "Abril chegou. Para muitos empresários, é hora de parar e avaliar o que foi feito.",
@@ -28,5 +58,35 @@
     "dateLabel": "06 Abr 2026",
     "cover": "blog/capas/O primeiro trimestre se foi.png",
     "readTime": 5
+  },
+  {
+    "slug": "ze-delivery-suporte-remoto",
+    "title": "Como trazer o suporte ao cliente para dentro de casa fez a satisfação triplicar: case Zé Delivery",
+    "excerpt": "Como aproximar suporte ao cliente, operação e análise de dados pode elevar a satisfação e fortalecer a experiência com mais eficiência.",
+    "category": "Customer Experience",
+    "date": "2026-04-01",
+    "dateLabel": "01 Abr 2026",
+    "cover": "blog/capas/ze-delivery-suporte.jpg",
+    "readTime": 5
+  },
+  {
+    "slug": "ia-centralidade-cliente",
+    "title": "Revolução da IA e a centralidade do cliente na estratégia",
+    "excerpt": "Como a revolução da IA reforça a centralidade do cliente, influenciando investimentos, retenção e impacto no negócio.",
+    "category": "Customer Experience",
+    "date": "2024-07-17",
+    "dateLabel": "17 Jul 2024",
+    "cover": "blog/capas/ia-centralidade-cliente.jpg",
+    "readTime": 6
+  },
+  {
+    "slug": "transformando-experiencia-cliente-ia",
+    "title": "Transformando a experiência do cliente com inteligência artificial",
+    "excerpt": "Como a inteligência artificial pode transformar a experiência do cliente, melhorar eficiência e personalização sem perder foco na jornada real.",
+    "category": "Customer Experience",
+    "date": "2023-10-30",
+    "dateLabel": "30 Out 2023",
+    "cover": "blog/capas/transformando-experiencia-cliente-ia.jpg",
+    "readTime": 7
   }
 ]
