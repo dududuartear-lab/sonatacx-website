@@ -177,7 +177,7 @@
                     <p class="text-slate-400 mb-8 font-light italic">
                         Redirecting you to the analytics cockpit in <span id="countdown">2</span>s...
                     </p>
-                    <a href="https://sonata-cx-planner.vercel.app/" class="text-indigo-600 font-semibold hover:underline decoration-1 underline-offset-4 text-sm">
+                    <a href="https://sonata-cx-planner.vercel.app/?lang=en" class="text-indigo-600 font-semibold hover:underline decoration-1 underline-offset-4 text-sm">
                         Click here if you are not redirected automatically
                     </a>
                 </div>
@@ -240,7 +240,7 @@
                     if (countdownEl) countdownEl.textContent = seconds;
                     if (seconds <= 0) {
                         clearInterval(timer);
-                        window.location.href = "https://sonata-cx-planner.vercel.app/";
+                        window.location.href = "https://sonata-cx-planner.vercel.app/?lang=en";
                     }
                 }, 1000);
 
