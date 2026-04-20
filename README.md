@@ -1,6 +1,6 @@
 # sonatacx-website — Institutional Website
 
-**Live:** [sonatacx.com.br](https://sonatacx.com.br)
+**Live:** [sonatacx.com.br](https://sonatacx.com.br) · [English version](https://sonatacx.com.br/en.html)
 
 Institutional website for Sonata.cx, a business management and customer experience consultancy. Built as a static site with deliberate choices around performance, SEO architecture, and conversion — no build step, no dependencies, no framework overhead.
 
@@ -25,7 +25,7 @@ Every page was built with organic search in mind from the start:
   - `Article` + `BreadcrumbList` on every blog post
   - `FAQPage` on article pages with Q&A sections to target featured snippets
 - **`sitemap.xml`** listing all URLs with `lastmod` and `changefreq`
-- **`robots.txt`** with sitemap reference
+- **`robots.txt`** with crawl directives and sitemap reference
 
 ### Blog as an SEO asset
 
@@ -52,15 +52,62 @@ The `/planner.html` page acts as a conversion gate for the Sonata CX Capacity Pl
 
 ---
 
+## Bilingual Structure (PT-BR / EN)
+
+The site ships a full English-language parallel version alongside the Portuguese original. Every EN page is a standalone HTML file — no routing layer, no framework, no build step — following the same static-first principle as the rest of the site.
+
+### How the bilingual system works
+
+- **Language selector** in the PT header links to `en.html`; every EN page has a `🇧🇷 PT` link back to the Portuguese equivalent
+- **`hreflang` bidirectional linking** on all EN pages: `<link rel="alternate" hreflang="pt-BR">` and `<link rel="alternate" hreflang="en">` pointing to the canonical URLs of both versions
+- **`lang="en"`** on all EN HTML elements
+- **All JSON-LD schemas translated** (Article, BreadcrumbList, FAQPage), with EN canonical URLs
+- **Dates in English format** (e.g. "April 18, 2026") across all EN pages
+- **All GA4 events, WhatsApp CTAs, and form `name` attributes preserved unchanged** — translation is UI-only
+
+### Brand adaptations (EN only)
+
+Certain brand names were adapted for an international English-speaking audience:
+
+| PT original | EN adaptation |
+|---|---|
+| 99 | Didi Chuxing |
+| Ambev | AB InBev |
+| Localiza | Localiza Hertz |
+| Zé Delivery | an AB InBev initiative |
+
+### EN file structure
+
+```
+/en.html                          ← English main homepage
+/planner-en.html                  ← English Capacity Planner lead gate
+/blog/en/
+  index.html                      ← English blog index
+  primeiro-trimestre.html         ← How to Evaluate Your Company's Q1 Results
+  vender-mais.html                ← Selling More Isn't Enough: How to Increase Profit Through Efficiency
+  pronto-para-crescer.html        ← Is Your Business Ready to Scale?
+  backlog-critico-automacao-remoto.html  ← From Critical Backlog to Automation
+  analise-dados-cx-remoto.html    ← Data Analysis for CX Decision-Making
+  gestores-cx-analise-dados-remoto.html  ← Why Good CX Managers Stop Growing
+  ia-centralidade-cliente.html    ← The AI Revolution and Customer Centricity
+  ze-delivery-suporte-remoto.html ← How Bringing Customer Support In-House Tripled Satisfaction
+  transformando-experiencia-cliente-ia.html  ← Transforming Customer Experience with AI
+```
+
+---
+
 ## Pages
 
 | Page | Purpose |
 |---|---|
 | `index.html` | Main institutional page — hero, about, results, services, tools, blog, contact |
-| `planner.html` | Lead gate for the Sonata CX Capacity Planner tool |
-| `blog/index.html` | Blog listing with category filters, reading time, author |
-| `blog/primeiro-trimestre.html` | Article: *Como avaliar os resultados da sua empresa no primeiro trimestre* |
-| `blog/vender-mais.html` | Article: *Vender mais não basta: como aumentar o lucro da empresa com mais eficiência* |
+| `en.html` | English version of the main institutional page |
+| `planner.html` | Lead gate for the Sonata CX Capacity Planner tool (PT) |
+| `planner-en.html` | Lead gate for the Sonata CX Capacity Planner tool (EN) |
+| `blog/index.html` | Blog listing with category filters, reading time, author (PT) |
+| `blog/en/index.html` | Blog listing — English version |
+| `blog/*.html` | Portuguese blog articles (9 published) |
+| `blog/en/*.html` | English blog articles (9 published, 1:1 with PT) |
 | `sitemap.xml` | XML sitemap for all public URLs |
 | `robots.txt` | Crawl directives with sitemap reference |
 
