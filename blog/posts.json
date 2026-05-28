@@ -1,5 +1,65 @@
 [
   {
+    "slug": "o-que-ia-nao-resolve",
+    "title": "O que a IA ainda não faz pelo seu negócio: quatro limitações reais que nenhum tutorial de automação vai te contar",
+    "excerpt": "Quatro limitações reais da IA que nenhum tutorial vai te contar — e o que você precisa resolver antes de automatizar qualquer coisa no seu negócio.",
+    "category": "IA & Gestão",
+    "date": "2026-05-24",
+    "dateLabel": "24 Mai 2026",
+    "cover": "blog/capas/o-que-ia-nao-resolve.jpg",
+    "readTime": 7
+  },
+  {
+    "slug": "futuro-do-trabalho-com-ia-estudo-ibm",
+    "title": "Apenas 25% das equipes usam IA no dia a dia — e o novo estudo da IBM com 2.000 CEOs explica por quê isso é o problema real de 2026",
+    "excerpt": "O IBM Institute for Business Value ouviu 2.000 CEOs em 33 países entre fevereiro e abril de 2026. O resultado revela um gap preocupante entre o que os líderes acreditam sobre suas organizações e o que está acontecendo de fato nas equipes.",
+    "category": "Customer Experience",
+    "date": "2026-05-18",
+    "dateLabel": "18 Mai 2026",
+    "cover": "blog/capas/futuro-do-trabalho-com-ia-estudo-ibm.jpg",
+    "readTime": 10
+  },
+  {
+    "slug": "fim-taxa-blusinhas-pequeno-comerciante",
+    "title": "Fim da taxa das blusinhas: o que muda para o pequeno comerciante e como reagir sem entrar numa guerra de preços",
+    "excerpt": "O governo zerou o imposto das blusinhas em maio de 2026. Entenda o que muda para o pequeno comerciante e como competir com Shein e Shopee sem entrar numa guerra de preços.",
+    "category": "Gestão & Varejo",
+    "date": "2026-05-17",
+    "dateLabel": "17 Mai 2026",
+    "cover": "blog/capas/fim-taxa-blusinhas-pequeno-comerciante.jpg",
+    "readTime": 6
+  },
+  {
+    "slug": "estado-da-ia-em-cx-2026",
+    "title": "De assistiva a agêntica: o que a maior pesquisa sobre IA em CX revela para líderes em 2026",
+    "excerpt": "A CX Network ouviu 342 profissionais globais e mapeou como a IA agêntica, os machine customers e a governança de dados estão redefinindo a experiência do cliente em 2026.",
+    "category": "IA & Estratégia",
+    "date": "2026-05-13",
+    "dateLabel": "13 Mai 2026",
+    "cover": "blog/capas/estado-da-ia-em-cx-2026.jpg",
+    "readTime": 8
+  },
+  {
+    "slug": "ia-avancada-prompts-marketing-vendas",
+    "title": "IA avançada nos pequenos negócios: prompts para análise, marketing e vendas que geram lucro",
+    "excerpt": "Prompts avançados e testados para análise de DRE, marketing autêntico e vendas que convertem — transforme a IA em consultor operacional do seu negócio.",
+    "category": "IA & Gestão",
+    "date": "2026-05-10",
+    "dateLabel": "10 Mai 2026",
+    "cover": "blog/capas/ia-avancada-prompts-marketing-vendas.png",
+    "readTime": 9
+  },
+  {
+    "slug": "como-escrever-prompts-exato",
+    "title": "Como escrever um prompt que funciona: aprenda a pedir direito para a IA",
+    "excerpt": "A diferença entre usar IA e usar IA bem está na qualidade do pedido. Aprenda a formular prompts que geram respostas úteis para o seu negócio.",
+    "category": "IA & Gestão",
+    "date": "2026-05-03",
+    "dateLabel": "03 Mai 2026",
+    "cover": "blog/capas/Prompt.png",
+    "readTime": 8
+  },
+  {
     "slug": "ia-pequenos-negocios-eficiencia-competitividade",
     "title": "Inteligência Artificial nos pequenos negócios: como usar IA para ganhar eficiência e competitividade",
     "excerpt": "Como pequenos negócios podem usar IA em marketing, atendimento, análise e gestão para ganhar eficiência real — sem precisar de grandes investimentos.",

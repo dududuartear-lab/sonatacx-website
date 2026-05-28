@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como escrever um prompt que funciona: aprenda a pedir direito para a IA | sonata.cx</title>
+    <meta name="description" content="Entenda como escrever prompts eficientes para ChatGPT, Gemini e Perplexity e transformar a IA em uma ferramenta de gestão real para o seu negócio.">
+    <link rel="canonical" href="https://sonatacx.com.br/blog/como-escrever-prompts-exato.html">
+
+    <meta property="og:title" content="Como escrever um prompt que funciona: aprenda a pedir direito para a IA">
+    <meta property="og:description" content="Entenda como escrever prompts eficientes para ChatGPT, Gemini e Perplexity e transformar a IA em uma ferramenta de gestão real para o seu negócio.">
+    <meta property="og:image" content="https://sonatacx.com.br/blog/capas/Prompt.png">
+    <meta property="og:url" content="https://sonatacx.com.br/blog/como-escrever-prompts-exato.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="sonata.cx">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Como escrever um prompt que funciona: aprenda a pedir direito para a IA">
+    <meta name="twitter:description" content="Entenda como escrever prompts eficientes para ChatGPT, Gemini e Perplexity e transformar a IA em uma ferramenta de gestão real para o seu negócio.">
+    <meta name="twitter:image" content="https://sonatacx.com.br/blog/capas/Prompt.png">
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"Como escrever um prompt que funciona: aprenda a pedir direito para a IA","image":"https://sonatacx.com.br/blog/capas/Prompt.png","datePublished":"2026-05-03","dateModified":"2026-05-03","author":{"@type":"Person","name":"Eduardo Duarte","url":"https://sonatacx.com.br"},"publisher":{"@type":"Organization","name":"sonata.cx","logo":{"@type":"ImageObject","url":"https://sonatacx.com.br/Logo%20Positiva.svg"}},"description":"Entenda como escrever prompts eficientes para ChatGPT, Gemini e Perplexity e transformar a IA em uma ferramenta de gestão real para o seu negócio."}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sonatacx.com.br"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://sonatacx.com.br/blog/"},{"@type":"ListItem","position":3,"name":"Como escrever um prompt que funciona: aprenda a pedir direito para a IA","item":"https://sonatacx.com.br/blog/como-escrever-prompts-exato.html"}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é um prompt?","acceptedAnswer":{"@type":"Answer","text":"Prompt é o comando, a pergunta ou a instrução que você dá para uma ferramenta de IA. Quanto mais claro e contextualizado, melhor a resposta."}},{"@type":"Question","name":"Qual a diferença entre ChatGPT, Gemini e Perplexity?","acceptedAnswer":{"@type":"Answer","text":"ChatGPT é forte para texto e estruturação de ideias. Gemini integra melhor com o ecossistema Google. Perplexity se destaca em pesquisa com fontes rastreáveis."}},{"@type":"Question","name":"Como escrever um bom prompt?","acceptedAnswer":{"@type":"Answer","text":"Um bom prompt inclui contexto, objetivo, público-alvo e formato esperado de resposta. Quanto mais específico o pedido, mais útil será o resultado."}},{"@type":"Question","name":"A IA substitui o gestor?","acceptedAnswer":{"@type":"Answer","text":"Não. A IA é uma ferramenta de apoio. O gestor continua sendo o responsável pela direção e pelas decisões do negócio."}}]}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { theme: { extend: { colors: { 'sonata-roxoescuro':'#31104d','sonata-roxoclaro':'#5f2a82','sonata-ouro':'#c8a31a' }, fontFamily:{titulo:['Raleway','sans-serif']} } } }
+    </script>
+    <style>
+        body { font-family:"Raleway",sans-serif; font-weight:300; }
+        .text-thin { font-weight:300; }
+        .glass-header { background:rgba(255,255,255,0.95); backdrop-filter:blur(12px); }
+        .gold-line::after { content:""; display:block; width:2.5rem; height:2px; background:#d2b211; margin-top:0.5rem; }
+        .faq-item { border-top: 1px solid #f1f5f9; padding-top: 1.25rem; margin-top: 1.25rem; }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+    <header class="fixed w-full top-0 z-50 glass-header border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="../index.html"><img src="../Logo Positiva.svg" alt="sonata.cx" class="h-16 md:h-20 w-auto"></a>
+                <div class="flex items-center gap-6">
+                    <a href="index.html" class="text-sm font-semibold text-sonata-roxoescuro hover:text-sonata-ouro transition-colors uppercase tracking-wider">&larr; Blog</a>
+                    <a href="../index.html#contato" class="bg-sonata-roxoescuro text-white px-6 py-2.5 rounded-full text-sm uppercase tracking-wider font-semibold hover:bg-sonata-roxoclaro transition-colors">Contato</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-2">
+            <nav class="text-xs text-gray-500 flex items-center gap-2">
+                <a href="../index.html" class="hover:text-sonata-ouro transition-colors">Home</a>
+                <span>/</span>
+                <a href="index.html" class="hover:text-sonata-ouro transition-colors">Blog</a>
+                <span>/</span>
+                <span class="text-gray-800 font-medium">IA &amp; Gestão</span>
+            </nav>
+        </div>
+
+        <div class="w-full h-72 md:h-96 overflow-hidden mt-4">
+            <img src="capas/Prompt.png" alt="Como escrever um prompt que funciona: aprenda a pedir direito para a IA" class="w-full h-full object-cover">
+        </div>
+
+        <article class="max-w-3xl mx-auto px-4 sm:px-6 py-14">
+            <div class="flex flex-wrap items-center gap-3 mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-sonata-ouro gold-line">IA &amp; Gestão</span>
+                <span class="text-gray-300">|</span>
+                <time class="text-gray-700 text-sm" datetime="2026-05-03">3 de maio de 2026</time>
+                <span class="text-gray-300">|</span>
+                <span class="text-gray-700 text-sm">8 min de leitura</span>
+            </div>
+
+            <h1 class="font-titulo text-3xl md:text-5xl text-sonata-roxoescuro font-bold leading-tight mb-10">Como escrever um prompt que funciona: aprenda a pedir direito para a IA</h1>
+
+            <div class="flex items-center gap-4 mb-14 pb-14 border-b border-gray-100">
+                <img src="../IMG-20260401-WA0026.jpg.jpeg" alt="Eduardo Duarte" class="w-12 h-12 rounded-full object-cover">
+                <div>
+                    <p class="font-semibold text-sonata-roxoescuro text-sm">Eduardo Duarte</p>
+                    <p class="text-gray-700 text-xs">Consultor Empresarial &middot; Sonata</p>
+                </div>
+            </div>
+
+            <div class="article-body">
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Na semana passada, falamos sobre inteligência artificial como uma ferramenta que já entrou na rotina das empresas, inclusive dos pequenos negócios. A conclusão era simples: quem começar agora vai se adaptar mais cedo, ganhar tempo e construir vantagem competitiva antes da concorrência. Mas existe uma segunda camada dessa conversa, e ela é talvez ainda mais importante: não basta ter acesso à IA. É preciso saber conversar com ela.</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">É aí que entra o prompt. Em termos práticos, prompt é o comando, a pergunta, a instrução que você dá para a ferramenta. Parece um detalhe, mas não é. Quem formula mal o pedido recebe uma resposta genérica, ampla e pouco útil. Quem formula bem o pedido consegue extrair muito mais da mesma ferramenta. Isso vale para texto, análise, imagem, resumo, planejamento, atendimento e até organização interna do negócio.</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Para o empresário, isso muda a lógica de uso. A IA deixa de ser uma curiosidade tecnológica e passa a funcionar como um apoio de gestão. Só que, para isso, ela precisa ser orientada com clareza. A diferença entre uma resposta vaga e uma resposta realmente aplicável está quase sempre no contexto que você entrega.</p>
+
+                <h2 class="font-titulo text-2xl md:text-3xl text-sonata-roxoescuro font-bold mt-14 mb-5">Como cada ferramenta funciona</h2>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Nem todas as ferramentas funcionam do mesmo jeito. O ChatGPT costuma ser muito forte para construir texto, estruturar ideias, organizar raciocínio e desenvolver versões de uma mesma peça. O Gemini tende a ser mais confortável para quem já trabalha no ecossistema Google e quer integrar conteúdo, produtividade e documentos. A Perplexity, por sua vez, se destaca muito na pesquisa e na apresentação de fontes, o que a torna útil quando a necessidade é buscar informação atualizada com mais rastreabilidade.</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Isso não quer dizer que uma seja "melhor" que a outra de forma absoluta. Quer dizer que cada uma cumpre um papel diferente. Na prática, o empresário ganha quando entende a ferramenta certa para a tarefa certa. Se a missão é pensar campanha, elaborar mensagem comercial ou revisar um texto, o ChatGPT pode ajudar bastante. Se a missão é pesquisar mercado, validar informação ou reunir referências, a Perplexity costuma ser uma escolha forte. E se o trabalho está amarrado a planilhas, documentos e fluxo do Google, o Gemini entra com vantagem de integração.</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Aliás, a Perplexity ganhou ainda mais atenção porque a operadora de celular Vivo ampliou a oferta do benefício de acesso ao plano Pro da Perplexity para determinados clientes, com possibilidade de gratuidade por um período de até um ano, dependendo da categoria e da elegibilidade do plano. Para quem está começando, isso ajuda a reduzir a barreira de entrada e torna a experimentação mais viável.</p>
+
+                <h2 class="font-titulo text-2xl md:text-3xl text-sonata-roxoescuro font-bold mt-14 mb-5">A ferramenta não faz tudo sozinha</h2>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">O ponto, porém, não é só escolher ferramenta. É aprender a pedir direito. Um prompt mal escrito costuma ser genérico demais: "faça um post sobre o dia das mães para minha empresa". A resposta até pode vir pronta, mas dificilmente será boa o suficiente para uso real. Falta contexto, falta objetivo, falta público e falta direção. A IA acaba devolvendo algo sem precisão.</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Agora compare com um prompt melhor: "Crie um post para Instagram de uma loja de roupas femininas do centro da cidade, com foco em peças para o Dia das Mães. O objetivo é atrair clientes para a loja e destacar opções de presente em diferentes faixas de preço. Use linguagem leve, comercial e acolhedora. Entregue três versões de legenda, uma sugestão de imagem e um CTA final." A diferença é enorme. O segundo pedido já organiza a entrega e reduz o retrabalho.</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Isso vale para qualquer área do negócio. Em marketing, por exemplo, uma loja de móveis pode pedir: "Monte um calendário de conteúdo para sete dias de uma loja de móveis planejados. O foco deve ser mostrar praticidade, aproveitamento de espaço e condições de pagamento. Para cada dia, entregue tema, objetivo, legenda curta e CTA." Em vez de receber uma sugestão solta, você passa a ter uma estrutura de trabalho.</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">No atendimento, o ganho é parecido. Em vez de dizer apenas "responda meus clientes", o gestor pode pedir: "Escreva cinco respostas curtas, profissionais e humanizadas para dúvidas frequentes sobre prazo, orçamento, formas de pagamento e suporte. O tom deve ser educado, firme e acolhedor." A ferramenta pode então ajudar a padronizar a comunicação sem engessar a relação com o cliente.</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Na organização interna, um prompt bem feito também economiza tempo. Você pode colar uma lista de tarefas e pedir: "Organize estas atividades em urgente, importante e pode esperar. Depois, sugira uma ordem de execução para reduzir retrabalho." Ou ainda: "Resuma estas anotações da reunião com o cliente em tópicos, destaque pendências, responsáveis e prazo sugerido."</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Outro uso muito útil está na produção de conteúdo. Pequenos negócios quase sempre sofrem para manter regularidade em redes sociais, e a IA pode ajudar exatamente aí. Em vez de improvisar toda semana, o gestor pode pedir: "Gere 10 ideias de post para uma loja de roupas femininas do centro da cidade, com foco em novidades da coleção, peças em promoção e dicas de combinação de looks."</p>
+
+                <h2 class="font-titulo text-2xl md:text-3xl text-sonata-roxoescuro font-bold mt-14 mb-5">Prompt não é fórmula mágica</h2>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">É importante entender, no entanto, que prompt não é fórmula mágica. A IA não entrega valor sozinha. Ela é tão boa quanto a capacidade de quem usa. Uma boa panela na mão de alguém que não sabe cozinhar não faz milagre — e, no negócio, acontece o mesmo. O resultado depende da clareza do comando, da revisão da resposta e da adaptação ao contexto real da empresa.</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Por isso, aprender a usar IA é menos sobre tecnologia e mais sobre método. Quem sabe explicar bem o que precisa, para quem precisa e com qual objetivo já avançou metade do caminho. A ferramenta entra como aceleradora. O gestor continua sendo o responsável pela direção.</p>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">E talvez esse seja o principal aprendizado desta segunda coluna da série: a diferença entre usar IA e usar bem IA está na qualidade do pedido. Quando o empresário aprende isso, ele deixa de brincar com a ferramenta e passa a incorporá-la de forma útil ao negócio. É aí que a IA começa a gerar valor de verdade: no marketing, no atendimento, na organização, na análise e na tomada de decisão.</p>
+
+                <h2 class="font-titulo text-2xl md:text-3xl text-sonata-roxoescuro font-bold mt-14 mb-5">Próxima etapa</h2>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Na próxima semana, vamos avançar para a parte mais prática da série, com rotinas e formas de encaixar a IA no dia a dia do negócio sem complicação. A proposta é sair do entendimento geral e entrar no uso consistente.</p>
+
+                <h2 class="font-titulo text-2xl md:text-3xl text-sonata-roxoescuro font-bold mt-14 mb-5">Sonata</h2>
+                <p class="text-gray-900 leading-relaxed text-lg mb-7 text-thin">Se você quer entender como a Sonata pode apoiar sua empresa na organização, eficiência e crescimento com uso inteligente da IA e de outras ferramentas de gestão, acesse <a href="https://sonatacx.com.br/" class="text-sonata-roxoescuro font-medium hover:text-sonata-ouro transition-colors">sonatacx.com.br</a>, acompanhe o perfil da Sonata no Instagram em @sonata_cx, escreva para o meu e-mail <a href="mailto:eduardo@sonatacx.com.br" class="text-sonata-roxoescuro font-medium hover:text-sonata-ouro transition-colors">eduardo@sonatacx.com.br</a> ou fale comigo pelo meu WhatsApp 38 93618 0000, ambos disponíveis no site. A tecnologia já está disponível; o desafio agora é transformar acesso em resultado.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="border-t border-gray-100 py-10 text-center">
+        <p class="text-gray-500 text-xs uppercase tracking-widest">&copy; 2026 sonata.cx &middot; Eduardo Duarte &middot; <a href="mailto:eduardo@sonatacx.com.br" class="hover:text-sonata-ouro">eduardo@sonatacx.com.br</a></p>
+    </footer>
+</body>
+</html>
