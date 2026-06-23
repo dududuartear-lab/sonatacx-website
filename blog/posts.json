@@ -1,5 +1,15 @@
 [
   {
+    "slug": "negocio-sobreviver-ia",
+    "title": "O negócio que vai sobreviver à IA não é o que mais usa tecnologia",
+    "excerpt": "O pequeno comércio que vai prosperar na era da IA não é o que mais automatiza — é o que usa tecnologia nos bastidores e dobra a aposta no calor humano e no relacionamento local.",
+    "category": "IA & Gestão",
+    "date": "2026-06-22",
+    "dateLabel": "22 Jun 2026",
+    "cover": "blog/capas/negocio-sobreviver-ia.png",
+    "readTime": 9
+  },
+  {
     "slug": "planejamento-financeiro-ia-pmes",
     "title": "Inteligência Artificial e Planejamento Financeiro para PMEs: Guia Prático para Aumentar a Margem com Segurança",
     "excerpt": "DRE, fluxo de caixa, ponto de equilíbrio e prompts avançados: como usar a IA com segurança no planejamento financeiro da sua PME e validar os números antes de decidir.",
